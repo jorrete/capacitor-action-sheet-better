@@ -22,7 +22,7 @@ This plugin will use the following project variables (defined in your app's `var
 ## Example
 
 ```typescript
-import { ActionSheet, cancel, ActionSheetButtonStyle } from 'capacitor-action-sheet-better';
+import { ActionSheet, ActionSheetButtonStyle } from 'capacitor-action-sheet-better';
 
 const showActions = async () => {
   const result = await ActionSheet.showActions({
@@ -46,7 +46,7 @@ const showActions = async () => {
 };
 
 const cancelAS = async () => {
-  cancel()
+  ActionSheet.cancel()
 }
 ```
 
